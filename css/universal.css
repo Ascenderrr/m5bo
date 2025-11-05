@@ -1,0 +1,45 @@
+:root {
+    --primary: #ffd100;    /* Dark Blue */
+    --accent: #ffd100;     /* Vibrant Yellow */
+    --secondary: #4a1d96;  /* Deep Purple */
+    --bg: #f9f9f9;
+    --text: #ffd100;
+    --white: #301934;
+    --radius: 1.2rem;
+    --shadow: 0 0.4rem 2.4rem rgba(0,0,0,0.08);
+    --font-main: 'Segoe UI', Arial, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%; /* Makes 1rem = 10px */
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-main);
+    background: #555555;
+    color: var(--text);
+    line-height: 1.6;
+    font-size: 1.6rem;
+    min-height: 100vh;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: var(--white);
+}

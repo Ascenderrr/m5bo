@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Beta | Roomus</title>
+    <link rel="stylesheet" href="../css/universal.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../index.html" class="logo">
+                <img src="../assets/sample_0 (2).jpg" alt="Roomus Logo">
+            </a>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="joinbeta.html" class="active">Join Beta</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="beta-content">
+            <div class="beta-form">
+                <h1>Join the Roomus Beta</h1>
+                <p class="form-intro">Tell us a bit about you and we'll reach out with the demo.</p>
+                <form>
+                    <div class="form-group">
+                        <label for="fullname">Full name *</label>
+                        <input type="text" id="fullname" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="nationality">Nationality</label>
+                        <select id="nationality">
+                            <option value="">Select nationality</option>
+                            <option value="NL">Dutch</option>
+                            <option value="DE">German</option>
+                            <option value="UK">British</option>
+                            <option value="FR">French</option>
+                            <option value="IT">Italian</option>
+                            <option value="ES">Spanish</option>
+                            <option value="OTHER">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="budget">Budget range</label>
+                        <select id="budget">
+                            <option value="">Select budget range</option>
+                            <option value="500-750">€500 - €750</option>
+                            <option value="750-1000">€750 - €1000</option>
+                            <option value="1000-1250">€1000 - €1250</option>
+                            <option value="1250+">€1250+</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="movein">Target move-in</label>
+                        <input type="date" id="movein">
+                    </div>
+                    <div class="form-group">
+                        <label for="university">University</label>
+                        <input type="text" id="university">
+                    </div>
+                    <div class="form-group">
+                        <label for="preferences">Which areas / roommate preferences?</label>
+                        <textarea id="preferences" rows="3"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="notes">Anything else? (short note)</label>
+                        <textarea id="notes" rows="2"></textarea>
+                    </div>
+                    <button type="submit" class="cta-btn">Join Beta Program</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <img src="../assets/sample_0 (2).jpg" alt="Roomus Logo" class="footer-logo">
+        <p>&copy; 2025 Roomus. All rights reserved.</p>
+    </footer>
+</body>
+</html>
