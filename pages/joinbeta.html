@@ -6,12 +6,20 @@
     <title>Join Beta | Roomus</title>
     <link rel="stylesheet" href="../css/universal.css">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
 </head>
 <body>
     <header>
         <nav>
             <a href="../index.html" class="logo">
-                <img src="../assets/sample_0 (2).jpg" alt="Roomus Logo">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" data-roomus="mark" role="img">
+  <title>Roomus mark</title>
+  <path d="M8.56 18.56 L32 7.85 L55.44 18.56" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="butt" stroke-linejoin="miter"/>
+  <path fill="currentColor" d="M32.12 23.11 L34.18 22.64 L36.3 22.42 L38.43 22.45 L40.54 22.73 L42.58 23.26 L44.52 24.03 L46.31 25.02 L47.92 26.21 L49.32 27.58 L50.48 29.1 L51.38 30.74 L52.01 32.48 L52.34 34.27 L52.38 36.08 L52.12 37.88 L51.57 39.63 L50.73 41.3 L49.63 42.86 L48.29 44.27 L46.73 45.5 L44.98 46.54 L43.08 47.37 L41.06 47.96 L38.96 48.3 L36.83 48.4 L33.6 48.0 L39.6 43.2 L35.2 44.8 L32.48 46.4 L24.4 42.4 L22.47 39.2 L21.99 37.43 L21.8 35.63 L21.91 33.82 L22.32 32.04 L23.02 30.32 L23.99 28.7 L25.21 27.22 L26.09 26.37 L29.53 30.4 L29.01 31.45 L28.65 32.57 L28.45 33.72 L28.41 34.89 L28.53 36.06 L28.81 37.2 L29.25 38.28 L29.84 39.3 L30.56 40.22 L30.83 41.03 L31.26 41.72 L32.35 42.27 L33.78 42.67 L35.28 42.92 L36.8 43.0 L37.97 42.92 L39.12 42.67 L40.22 42.27 L41.25 41.72 L42.2 41.03 L43.04 40.22 L43.76 39.3 L44.35 38.28 L44.79 37.2 L45.07 36.06 L45.19 34.89 L45.15 33.72 L44.95 32.57 L44.59 31.45 L44.07 30.4 L43.42 29.43 L42.64 28.56 L40.36 27.8 L39.64 27.18 L38.87 26.71 L38.06 26.38 L37.22 26.22 L36.21 26.22 L36.07 26.23 Z"/>
+  <path fill="currentColor" d="M11.4 54 L52.6 54 L52.6 58 L11.4 58 Z"/>
+  <path fill="currentColor" d="M11.4 48.9 L16.8 48.9 L16.8 58 L11.4 58 Z"/>
+  <path fill="currentColor" d="M47.2 48.9 L52.6 48.9 L52.6 58 L47.2 58 Z"/>
+</svg><img src="../assets/roomus-logo-small.png" alt="Roomus Logo" class="logo-fallback" onerror="this.remove()">
             </a>
             <ul>
                 <li><a href="../index.html">Home</a></li>
@@ -20,11 +28,16 @@
         </nav>
     </header>
     <main>
+        <section class="page-header">
+            <h1>EARLY ACCESS</h1>
+            <p>Join the Roomus beta</p>
+        </section>
         <section class="beta-content">
-            <div class="beta-form">
-                <h1>Join the Roomus Beta</h1>
+            <div class="beta-form" data-reveal>
+                <div class="beta-wave" aria-hidden="true"><svg viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true"><path class="wave-fill" d="M0,32 C240,60 480,0 720,24 C960,48 1200,8 1440,32 L1440,60 L0,60 Z"/></svg></div>
                 <p class="form-intro">Tell us a bit about you and we'll reach out with the demo.</p>
-                <form>
+                <form id="beta-form">
+                    <div class="beta-row">
                     <div class="form-group">
                         <label for="fullname">Full name *</label>
                         <input type="text" id="fullname" required>
@@ -33,6 +46,8 @@
                         <label for="email">Email *</label>
                         <input type="email" id="email" required>
                     </div>
+                    </div>
+                    <div class="beta-row">
                     <div class="form-group">
                         <label for="nationality">Nationality</label>
                         <select id="nationality">
@@ -56,6 +71,7 @@
                             <option value="1250+">€1250+</option>
                         </select>
                     </div>
+                    </div>
                     <div class="form-group">
                         <label for="movein">Target move-in</label>
                         <input type="date" id="movein">
@@ -73,13 +89,23 @@
                         <textarea id="notes" rows="2"></textarea>
                     </div>
                     <button type="submit" class="cta-btn">Join Beta Program</button>
+                    <p class="beta-privacy">We'll only use this to reach out about the beta.</p>
                 </form>
             </div>
         </section>
     </main>
-    <footer>
-        <img src="../assets/sample_0 (2).jpg" alt="Roomus Logo" class="footer-logo">
-        <p>&copy; 2025 Roomus. All rights reserved.</p>
+    <footer data-reveal>
+        <span class="footer-mark"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" data-roomus="mark" role="img">
+  <title>Roomus mark</title>
+  <path d="M8.56 18.56 L32 7.85 L55.44 18.56" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="butt" stroke-linejoin="miter"/>
+  <path fill="currentColor" d="M32.12 23.11 L34.18 22.64 L36.3 22.42 L38.43 22.45 L40.54 22.73 L42.58 23.26 L44.52 24.03 L46.31 25.02 L47.92 26.21 L49.32 27.58 L50.48 29.1 L51.38 30.74 L52.01 32.48 L52.34 34.27 L52.38 36.08 L52.12 37.88 L51.57 39.63 L50.73 41.3 L49.63 42.86 L48.29 44.27 L46.73 45.5 L44.98 46.54 L43.08 47.37 L41.06 47.96 L38.96 48.3 L36.83 48.4 L33.6 48.0 L39.6 43.2 L35.2 44.8 L32.48 46.4 L24.4 42.4 L22.47 39.2 L21.99 37.43 L21.8 35.63 L21.91 33.82 L22.32 32.04 L23.02 30.32 L23.99 28.7 L25.21 27.22 L26.09 26.37 L29.53 30.4 L29.01 31.45 L28.65 32.57 L28.45 33.72 L28.41 34.89 L28.53 36.06 L28.81 37.2 L29.25 38.28 L29.84 39.3 L30.56 40.22 L30.83 41.03 L31.26 41.72 L32.35 42.27 L33.78 42.67 L35.28 42.92 L36.8 43.0 L37.97 42.92 L39.12 42.67 L40.22 42.27 L41.25 41.72 L42.2 41.03 L43.04 40.22 L43.76 39.3 L44.35 38.28 L44.79 37.2 L45.07 36.06 L45.19 34.89 L45.15 33.72 L44.95 32.57 L44.59 31.45 L44.07 30.4 L43.42 29.43 L42.64 28.56 L40.36 27.8 L39.64 27.18 L38.87 26.71 L38.06 26.38 L37.22 26.22 L36.21 26.22 L36.07 26.23 Z"/>
+  <path fill="currentColor" d="M11.4 54 L52.6 54 L52.6 58 L11.4 58 Z"/>
+  <path fill="currentColor" d="M11.4 48.9 L16.8 48.9 L16.8 58 L11.4 58 Z"/>
+  <path fill="currentColor" d="M47.2 48.9 L52.6 48.9 L52.6 58 L47.2 58 Z"/>
+</svg></span><img src="../assets/roomus-logo-small.png" alt="Roomus Logo" class="logo-fallback" onerror="this.remove()">
+        <p>&copy; <span id="year">2025</span> Roomus. All rights reserved.</p>
     </footer>
+    <script src="../js/universal.js" defer></script>
+    <script src="../js/main.js" defer></script>
 </body>
 </html>
