@@ -1,7 +1,10 @@
 header {
     box-shadow: var(--shadow);
     padding: 0.5rem 0;
-    border-bottom: 0.2rem solid #ececec;
+    border-bottom: 0.2rem solid var(--border);
+    background: rgba(255, 255, 255, 0.88);
+    -webkit-backdrop-filter: blur(1.2rem) saturate(1.2);
+    backdrop-filter: blur(1.2rem) saturate(1.2);
 }
 
 nav {
@@ -13,9 +16,20 @@ nav {
     padding: 0 2rem;
 }
 
-.logo img {
+.logo {
+    color: var(--primary);
+    display: inline-flex;
+    align-items: center;
+}
+
+.logo svg {
     height: 5.2rem;
-    filter: drop-shadow(0 0.2rem 0.8rem rgba(47, 47, 47, 0.08));
+    width: auto;
+    display: block;
+}
+
+.logo-fallback {
+    display: none;
 }
 
 nav ul {
@@ -30,14 +44,18 @@ nav a {
     font-weight: 600;
     font-size: 1.6rem;
     letter-spacing: 0.05rem;
-    padding: 0.25rem 0.5rem;
-    border-radius: 0.6rem;
+    padding: 0.6rem 1.4rem;
+    border-radius: 2rem;
     transition: color 0.2s, background 0.2s;
 }
 
-nav a.active,
 nav a:hover {
-    color: var(--white);
+    background: var(--surface-alt);
+    color: var(--primary);
+}
+
+nav a.active {
+    color: var(--primary);
     background: var(--accent);
 }
 
@@ -153,16 +171,27 @@ nav a:hover {
 }
 
 footer {
-    background: var(--primary);
+    background: linear-gradient(135deg, var(--secondary), var(--primary));
     color: var(--white);
     text-align: center;
-    padding: 2.5rem 0 1.2rem;
+    padding: 3.2rem 2rem 2rem;
     margin-top: 3rem;
 }
 
-.footer-logo {
+.footer-mark {
+    color: var(--accent);
+    display: inline-block;
+}
+
+.footer-mark svg {
     height: 3.6rem;
-    margin-bottom: 1rem;
+    width: auto;
+}
+
+footer p {
+    color: var(--surface-alt);
+    margin-top: 1rem;
+    font-size: 1.4rem;
 }
 
 /* Beta Form Styles */
