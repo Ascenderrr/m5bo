@@ -252,6 +252,14 @@ nav a.active {
     padding: 0 2rem;
 }
 
+.contact-form {
+    background: var(--surface);
+    border: 0.1rem solid var(--border);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    padding: 3rem;
+}
+
 .form-group {
     margin-bottom: 1.5rem;
 }
@@ -259,17 +267,101 @@ nav a.active {
 .form-group label {
     display: block;
     margin-bottom: 0.5rem;
-    font-size: 1.6rem;
-    font-weight: 600;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 0.08rem;
+    text-transform: uppercase;
+    color: var(--primary);
 }
 
 .form-group input,
 .form-group textarea {
     width: 100%;
-    padding: 1rem;
-    border: 0.2rem solid #eeeeee;
+    padding: 1.2rem 1.4rem;
+    border: 0.2rem solid var(--border-strong);
     border-radius: var(--radius);
     font-size: 1.6rem;
+    background: var(--surface);
+    color: var(--text);
+    transition: border-color var(--dur-fast) var(--ease-out), box-shadow var(--dur-fast) var(--ease-out);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 0.3rem var(--accent);
+}
+
+.field-hint {
+    display: block;
+    min-height: 1.8rem;
+    font-size: 1.3rem;
+    color: var(--muted);
+    margin-top: 0.4rem;
+}
+
+.field-error {
+    display: block;
+    min-height: 1.8rem;
+    font-size: 1.3rem;
+    color: var(--primary);
+    margin-top: 0.4rem;
+}
+
+.form-note {
+    display: block;
+    min-height: 2rem;
+    font-size: 1.4rem;
+    color: var(--muted);
+    margin-top: 1.2rem;
+}
+
+.contact-form .cta-btn {
+    width: 100%;
+    background: var(--primary);
+    color: var(--surface);
+}
+
+.contact-info {
+    background: linear-gradient(160deg, var(--secondary), var(--primary));
+    color: var(--surface);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    padding: 3rem;
+}
+
+.contact-info h3 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: var(--surface);
+}
+
+.contact-info .info-row {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    font-size: 1.5rem;
+    margin-bottom: 1.6rem;
+    color: var(--surface);
+}
+
+.info-glyph {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 3.2rem;
+    height: 3.2rem;
+    flex: 0 0 3.2rem;
+    border-radius: 0.8rem;
+    background: var(--accent);
+    color: var(--primary);
+}
+
+.info-glyph svg {
+    width: 1.8rem;
+    height: 1.8rem;
+    display: block;
 }
 
 footer {
