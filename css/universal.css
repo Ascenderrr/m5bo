@@ -100,8 +100,8 @@ html.js [data-reveal] {
 }
 
 html.js [data-reveal].is-visible {
-    opacity: 1;
-    transform: none;
+    opacity: 1 !important;
+    transform: none !important;
 }
 
 @media (prefers-reduced-motion: reduce) {

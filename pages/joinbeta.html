@@ -33,9 +33,11 @@
             <p>Join the Roomus beta</p>
         </section>
         <section class="beta-content">
-            <div class="beta-form">
+            <div class="beta-form" data-reveal>
+                <div class="beta-wave" aria-hidden="true"><svg viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true"><path class="wave-fill" d="M0,32 C240,60 480,0 720,24 C960,48 1200,8 1440,32 L1440,60 L0,60 Z"/></svg></div>
                 <p class="form-intro">Tell us a bit about you and we'll reach out with the demo.</p>
-                <form>
+                <form id="beta-form">
+                    <div class="beta-row">
                     <div class="form-group">
                         <label for="fullname">Full name *</label>
                         <input type="text" id="fullname" required>
@@ -44,6 +46,8 @@
                         <label for="email">Email *</label>
                         <input type="email" id="email" required>
                     </div>
+                    </div>
+                    <div class="beta-row">
                     <div class="form-group">
                         <label for="nationality">Nationality</label>
                         <select id="nationality">
@@ -67,6 +71,7 @@
                             <option value="1250+">€1250+</option>
                         </select>
                     </div>
+                    </div>
                     <div class="form-group">
                         <label for="movein">Target move-in</label>
                         <input type="date" id="movein">
@@ -84,11 +89,12 @@
                         <textarea id="notes" rows="2"></textarea>
                     </div>
                     <button type="submit" class="cta-btn">Join Beta Program</button>
+                    <p class="beta-privacy">We'll only use this to reach out about the beta.</p>
                 </form>
             </div>
         </section>
     </main>
-    <footer>
+    <footer data-reveal>
         <span class="footer-mark"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" data-roomus="mark" role="img">
   <title>Roomus mark</title>
   <path d="M8.56 18.56 L32 7.85 L55.44 18.56" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="butt" stroke-linejoin="miter"/>
@@ -99,5 +105,7 @@
 </svg></span><img src="../assets/roomus-logo-small.png" alt="Roomus Logo" class="logo-fallback" onerror="this.remove()">
         <p>&copy; <span id="year">2025</span> Roomus. All rights reserved.</p>
     </footer>
+    <script src="../js/universal.js" defer></script>
+    <script src="../js/main.js" defer></script>
 </body>
 </html>
