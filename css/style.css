@@ -498,8 +498,12 @@ footer p {
 .how-it-works {
     max-width: 120rem;
     margin: 8rem auto;
-    padding: 0 2rem;
+    padding: 4rem 2rem;
     text-align: center;
+    background: linear-gradient(180deg, var(--surface-alt) 0%, var(--surface) 100%);
+    border-top: 0.1rem solid var(--border);
+    border-bottom: 0.1rem solid var(--border);
+    border-radius: var(--radius-lg);
 }
 
 .how-it-works h2 {
@@ -515,25 +519,92 @@ footer p {
 }
 
 .steps-grid {
+    position: relative;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 3rem;
     margin-top: 4rem;
 }
 
+.steps-grid.connector::before {
+    content: "";
+    position: absolute;
+    top: 4.2rem;
+    left: 12%;
+    right: 12%;
+    border-top: 0.2rem dashed var(--secondary);
+    opacity: 0.5;
+    z-index: 0;
+}
+
 .step-card {
-    background: var(--white);
+    position: relative;
+    z-index: 1;
+    background: var(--surface);
     padding: 3rem;
     border-radius: var(--radius);
+    border: 0.1rem solid var(--border);
     box-shadow: var(--shadow);
     text-align: left;
 }
 
 .step-number {
+    display: inline-block;
     font-size: 2.4rem;
     font-weight: 800;
     color: var(--accent);
+    background: var(--primary);
+    border-radius: 1rem;
+    padding: 0.4rem 1.2rem;
     margin-bottom: 1.5rem;
+}
+
+.step-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 5.6rem;
+    height: 5.6rem;
+    border-radius: 1.4rem;
+    background: var(--surface-alt);
+    border: 0.1rem solid var(--border);
+    margin-bottom: 1.6rem;
+    margin-left: 1.2rem;
+    vertical-align: middle;
+}
+
+.step-icon svg {
+    width: 3.6rem;
+    height: 3.6rem;
+    display: block;
+}
+
+.band-divider {
+    display: block;
+    line-height: 0;
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.band-divider svg {
+    width: 100%;
+    height: 4rem;
+    display: block;
+}
+
+.band-divider .wave-fill {
+    fill: var(--secondary);
+}
+
+.band-divider .wave-fill-alt {
+    fill: var(--surface-alt);
+}
+
+@media (max-width: 768px) {
+    .steps-grid.connector::before {
+        display: none;
+    }
 }
 
 .step-card h4 {
